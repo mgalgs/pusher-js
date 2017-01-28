@@ -1707,6 +1707,7 @@ var Pusher =
 	    var request = new Request(this.options.authEndpoint, {
 	        headers: headers,
 	        body: body,
+	        credentials: "same-origin",
 	        method: "POST"
 	    });
 	    return fetch(request).then(function (response) {
